@@ -77,13 +77,15 @@ The script generates a comparison table similar to the one below:
 ```
 ├── src/
 │   ├── simulation_main.py    # Main SimPy logic for Monolithic, RPA, and MAS
-│   └── visualization.py      # Script to generate Figures 1, 2, and 3
+│   ├── visualization.py      # Script to generate Figures 1, 2, and 3
+│   └── stress_test.py        # Scalability analysis script
 ├── assets/
 │   ├── fig1_architecture.png # Proposed Framework Diagram
 │   ├── fig2_performance.png  # Performance Comparison Chart
 │   └── fig3_distribution.png # Distribution Analysis
 ├── output/
-│   └── simulation_results.csv # Generated dataset from the latest run
+│   ├── simulation_results.csv # Generated dataset from the latest run
+│   └── stress_test_results.csv# Scalability analysis results
 ├── README.md                 # Project documentation
 ├── requirements.txt          # Dependencies
 └── pyproject.toml            # uv project configuration
